@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "d4ae0a14-f348-46e8-b96c-e2d182cff955",
+		"name": "dmeo-project-sean",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"bennn\",\r\n    \"password\": \"Jony5528469\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/authentication/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authentication",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"bennn\",\r\n    \"email\": \"bennbn@gmail.com\",\r\n    \"password\": \"Jony5528469\",\r\n    \"role\": \"TEACHER\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/authentication/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"authentication",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get avademy data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/academy",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"academy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
